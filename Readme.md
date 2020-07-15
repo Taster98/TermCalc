@@ -60,3 +60,6 @@ If for some reason you will then wish to uninstall TermCalc, just go to the same
 make uninstall
 ~~~
 and wait until the uninstall process has completed. After the message, you can then remove the entire directory with the remaining files!
+
+## LICENSE
+This software is completely free; see <a href="LICENSE">GNU General Public License</a>.
