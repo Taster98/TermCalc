@@ -19,7 +19,7 @@ install:
 	./setup.sh;
 	$(CC) $(CFLAGS) termCalc.c -o termCalc -lm
 	>> ~/.bashrc echo "export PATH=$$$(PERC):$(CURDIR)";
-	@echo '\nCOMPLETED\nTermCalc is installed. Write \"termCalc -h\" or \"termCalc --help\" to learn how to use it!';
+	@echo '\nCOMPLETED\nTermCalc is installed. Write termCalc -h or termCalc --help to learn how to use it!';
 	
 clean:
 	@echo 'Removing executable...';

@@ -22,6 +22,8 @@ void printI(long value);
 void printF(float value);
 //function for showing help
 void help();
+//function for showing version
+void version();
 
 int main(int argc, char *argv[]){
     if(valid(argv,argc)){
@@ -40,6 +42,12 @@ int main(int argc, char *argv[]){
         if(!strcmp(\"--help\",argv[1]) || !strcmp(\"-h\",argv[1]))
         {
             help();
+        }
+        //VERSION:
+        else
+        if(!strcmp(\"--version\",argv[1]) || !strcmp(\"-v\",argv[1]))
+        {
+            version();
         }
         //SUBTRACTION
         else
@@ -136,7 +144,7 @@ int main(int argc, char *argv[]){
 }
 
 void help(){
-    fprintf(stdout,\"\n--------Welcome to TermCalc v.0.1--------\n\nDESCRIPTION\n\nThis is a simple terminal calculator, to handle\n\");
+    fprintf(stdout,\"\n--------Welcome to TermCalc v.0.2.0--------\n\nDESCRIPTION\n\nThis is a simple terminal calculator, to handle\n\");
     fprintf(stdout,\"calculations without search the gnome calculator wverytime. This could be useful when the\n\");
     fprintf(stdout,\"desktop environment is not available, because you are on a server or you're just lazy.\n\n\");
     fprintf(stdout,\"USAGE\n\n-h, --help: To see this help, you can type 'TermCalc -h' or 'TermCalc --help'.\n\n\");
@@ -151,7 +159,12 @@ void help(){
     fprintf(stdout,\"cbrt, -crt, --cbrt: To do a cubic root, you can type 'TermCalc cbrt [args]' or 'TermCalc --cbrt [args]' or 'TermCalc -crt [args]'\n\n\");
     fprintf(stdout,\"abs, -abs, --abs: To get absolute value of a number, you can type 'TermCalc abs [args]' or 'TermCalc --abs [args]' or 'TermCalc -abs [args]'\n\n\");
     fprintf(stdout,\"pow, -pow, --pow: To get pow value of a^b (where a is the first, and b the second number), you can type 'TermCalc abs [args]' or 'TermCalc --abs [args]' or 'TermCalc -abs [args]'\n\");
-    fprintf(stdout,\"\nEXAMPLES: \n\nTermCalc add 1 2 3 4 5 6 7 --> 28\nTermCalc -d 8 2 --> 4\nTermCalc --mul pi 3 --> 9,423...\n\nMade by Taster98\nurl: http://luiggi.altervista.org/\n\n\");
+    fprintf(stdout,\"\nEXAMPLES: \n\nTermCalc add 1 2 3 4 5 6 7 --> 28\nTermCalc -d 8 2 --> 4\nTermCalc --mul pi 3 --> 9,423...\n\nMade by Taster98\nurl: https://github.com/Taster98\n\n\");
+    fflush(stdout);
+}
+
+void version(){
+    fprintf(stdout, \"TermCalc v0.2.0\nCreated by: Taster98 (https://github.com/Taster98/TermCalc.git)\nThis is a free software, see the LICENSE for more information.\n\");
     fflush(stdout);
 }
 
