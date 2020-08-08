@@ -4,12 +4,12 @@
 This is a simple Terminal Inline Calculator. It allows you to handle simple calculations without Gtk or GUI, simply by typing the operation to do and the numbers. For now it allows you to only perform classical arithmetic operations plus Pow, SQRT, Square, Cube, CBRT, Abs, with either integer numbers or float numbers. In the next releases i will add the aggregation of two or more functions to compute more complex calculations, plus more of the standard math things such as Logarithms, Sin, Cos,...
 
 ## Usage
-First of all, you will have to clone this directory to a location you prefer to. Open your terminal on that directory and then type:
+First of all, you will have to download this tarball file in order to install it:
 ~~~
-git clone link
+wget https://raw.githubusercontent.com/Taster98/TermCalc/master/TermCalc.tar.gz
 ~~~
 
-After this, you should be able to see 2 files inside the directory: <i>Makefile</i> and <i>setup.sh</i>. On the same terminal window, just type:
+After this, extract the folder and you should be able to see 4 files inside the directory: <i>Makefile</i>, <i>setup.sh</i> and Readme.md (and the LICENSE) . On the same terminal window, just type:
 ```
 make install
 ```
