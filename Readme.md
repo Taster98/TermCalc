@@ -6,15 +6,19 @@ This is a simple Terminal Inline Calculator. It allows you to handle simple calc
 ## Usage
 First of all, you will have to download this tarball file in order to install it:
 ~~~
-wget https://raw.githubusercontent.com/Taster98/TermCalc/master/TermCalc.tar.gz
+wget http://luiggi.it/Packages/termcalc-0.5.tar.gz
 ~~~
 
-After this, extract the folder and you should be able to see 4 files inside the directory: <i>Makefile</i>, <i>setup.sh</i> and Readme.md (and the LICENSE) . On the same terminal window, just type:
+After this, on the same terminal window, just type:
 ```
+./configure
+make
 make install
 ```
-And wait the installation progress. After this line, you should see some other files on the same folder, plus it should have added the executable into the ~/.bashrc file. It is important to not change anything inside this folder.
-You can now use TermCalc anytime you want!
+And wait the installation progress. After that, you should be able to use TermCalc. Just type:
+```
+termCalc --help
+```
 
 ### Examples
 
