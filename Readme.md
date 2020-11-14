@@ -9,7 +9,7 @@ First of all, you will have to download this tarball file in order to install it
 wget http://luiggi.it/Packages/termcalc-0.5.tar.gz
 ~~~
 
-After this, on the same terminal window, just type:
+After this, on the same terminal window, just type: (Warning: You may run "make" and "make install" in sudo mode)
 ```
 ./configure
 make
